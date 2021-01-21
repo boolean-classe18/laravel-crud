@@ -47,10 +47,10 @@ class DressController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Dress $dress)
     {
         // SELECT * FROM dresses WHERE id = <$id>
-        $dress = Dress::find($id);
+        // $dress = Dress::find($id);
         if($dress) {
             $data = [
                 'dress' => $dress
