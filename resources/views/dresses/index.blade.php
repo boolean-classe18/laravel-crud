@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <h1>Tutti i vestiti</h1>
+                <h1 class="mt-4 mb-4">Tutti i vestiti</h1>
                 <table class="table">
                     <thead>
                         <tr>
@@ -32,10 +32,10 @@
                                     {{ $dress->size }}
                                 </td>
                                 <td>
-                                    {{ $dress->price }}
+                                    &euro; {{ number_format($dress->price, 2, ',', ' ') }}
                                 </td>
                                 <td>
-                                    <a href="{{ route('dresses.show', ['dress' => $dress->id ]) }}"
+                                    <a href="{{ route('dresses.show', ['dress' => $dress->id]) }}"
                                         class="btn btn-info">
                                         Dettagli
                                     </a>
