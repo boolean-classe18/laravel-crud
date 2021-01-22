@@ -25,7 +25,13 @@
                     </div>
                     <div class="form-group">
                         <label>Stagione</label>
-                        <input type="text" name="season" class="form-control">
+                        <select class="form-control" name="season">
+                            <option value="">--seleziona--</option>
+                            <option value="estivo">estivo</option>
+                            <option value="primaverile">primaverile</option>
+                            <option value="autunnale">autunnale</option>
+                            <option value="invernale">invernale</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label>Taglia</label>
