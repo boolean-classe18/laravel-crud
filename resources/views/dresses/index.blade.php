@@ -45,6 +45,14 @@
                                     <a href="{{ route('dresses.edit', ['dress' => $dress->id]) }}" class="btn btn-warning">
                                         Modifica
                                     </a>
+                                    <form method="POST" class="d-inline-block" 
+                                    action="{{ route('dresses.destroy', ['dress' => $dress->id]) }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-danger">
+                                            Cancella
+                                        </button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach
