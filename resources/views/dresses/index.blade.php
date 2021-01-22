@@ -42,6 +42,9 @@
                                         class="btn btn-info">
                                         Dettagli
                                     </a>
+                                    <a href="{{ route('dresses.edit', ['dress' => $dress->id]) }}" class="btn btn-warning">
+                                        Modifica
+                                    </a>
                                 </td>
                             </tr>
                         @endforeach
